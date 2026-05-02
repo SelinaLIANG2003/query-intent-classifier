@@ -1,0 +1,27 @@
+# Virtual environment (large, do not upload)
+venv/
+
+# Data files (large)
+data/
+*.csv
+*.tsv
+*.json
+
+# Model weights (large)
+models/
+*.pt
+*.bin
+*.pkl
+
+# API keys (NEVER upload!)
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
