@@ -14,11 +14,14 @@
 | Commercial | 比較・調査したい | `best laptop 2024` |
 
 ## 🏗️ システム構成
-data_prep.py       # データ前処理・特徴量エンジニアリング
-baseline_xgb.py    # TF-IDF + XGBoost ベースライン
-bert_finetune.py   # BERT fine-tuning（PyTorch + HuggingFace）
-llm_labeling.py    # LLMベース分類・疑似ラベル生成
-api.py             # FastAPI 推論エンドポイント
+
+| ファイル | 役割 |
+|----------|------|
+| `data_prep.py` | データ前処理・特徴量エンジニアリング |
+| `baseline_xgb.py` | TF-IDF + XGBoost ベースライン |
+| `bert_finetune.py` | BERT fine-tuning（PyTorch + HuggingFace）|
+| `llm_labeling.py` | LLMベース分類・疑似ラベル生成 |
+| `api.py` | FastAPI 推論エンドポイント |
 
 ## 📊 モデル比較結果
 
@@ -28,7 +31,7 @@ api.py             # FastAPI 推論エンドポイント
 | BERT fine-tuning | **0.875** | **0.867** |
 | LLM (Mock) | 0.875 | 0.867 |
 
-BERTはXGBoostに比べてF1スコアが**+0.59**向上。
+BERTはXGBoostに比べてF1スコアが **+0.59** 向上。
 
 ## 🚀 実行方法
 
